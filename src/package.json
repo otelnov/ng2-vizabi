@@ -1,0 +1,13 @@
+{
+  "name": "ng2-vizabi",
+  "version": "0.18.3-30",
+  "dependencies": {
+    "URLON": "*",
+    "bluebird": "*",
+    "vizabi": "*"
+  },
+  "peerDependencies": {
+    "@angular/common": "*",
+    "@angular/core": "*"
+  }
+}
