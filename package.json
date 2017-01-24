@@ -1,5 +1,6 @@
 {
-  "name": "ng2-vizabi",
+  "name": "ng2-vizabi-base",
+  "private": true,
   "version": "0.18.3-30",
   "description": "angular2 vizabi component",
   "scripts": {
@@ -41,9 +42,9 @@
   },
   "homepage": "https://github.com/vizabi/ng2-vizabi#readme",
   "peerDependencies": {
-    "@angular/common": "2.4.3",
-    "@angular/compiler": "2.4.3",
-    "@angular/core": "2.4.3"
+    "@angular/common": "^2.4.0",
+    "@angular/compiler": "^2.4.0",
+    "@angular/core": "^2.4.0"
   },
   "dependencies": {
     "URLON": "2.0.0",
@@ -67,7 +68,7 @@
     "@types/marked": "0.0.28",
     "@types/node": "7.0.0",
     "@types/webpack": "^2.2.1",
-    "angular-cli": "1.0.0-beta.25.5",
+    "angular-cli": "1.0.0-beta.26",
     "bootstrap": "3.3.7",
     "chokidar-cli": "1.2.0",
     "classlist-polyfill": "1.0.3",
@@ -98,9 +99,9 @@
     "lodash": "4.17.4",
     "markdown-loader": "^0.1.7",
     "marked": "0.3.6",
-    "ng2-bootstrap": "1.2.2",
+    "ng2-bootstrap": "1.3.0",
     "ng2-page-scroll": "4.0.0-beta.2",
-    "ngm-cli": "0.4.0",
+    "ngm-cli": "^0.4.4",
     "npm-run-all": "^4.0.1",
     "pre-commit": "1.2.2",
     "protractor": "5.0.0",

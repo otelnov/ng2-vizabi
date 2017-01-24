@@ -1,7 +1,7 @@
 import {EventEmitter, NgModule, Input, Output, OnInit, OnDestroy, Directive, ElementRef} from '@angular/core';
 import {VizabiService} from './vizabi-service';
 
-declare var Vizabi: any;
+declare const Vizabi: any;
 
 @Directive({
   selector: 'vizabi'
@@ -103,8 +103,8 @@ export class VizabiDirective implements OnInit, OnDestroy {
     // cover blocks with click handler
     ["vzb-tool-stage", "vzb-tool-dialogs", "vzb-tool-buttonlist"].forEach(item => {
       const elementsList = [].slice.call(document.getElementsByClassName(item));
-      elementsList.forEach(element => {
-        element.addEventListener('click', ($event) => {
+      elementsList.forEach((element: any) => {
+        element.addEventListener('click', ($event: any) => {
           this.onClick.emit($event);
         });
       })
@@ -188,16 +188,17 @@ export class VizabiDirective implements OnInit, OnDestroy {
   }
 }
 
+export { VizabiService };
+
 @NgModule({
   declarations: [
-    VizabiDirective,
-    VizabiService
+    VizabiDirective
   ],
   exports: [
-    VizabiDirective,
-    VizabiService
+    VizabiDirective
   ],
-  imports: []
+  imports: [],
+  providers: [VizabiService]
 })
 export class VizabiModule {
 }
