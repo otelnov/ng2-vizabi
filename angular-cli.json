@@ -7,7 +7,10 @@
       "root": "demo/src",
       "outDir": "demo/dist",
       "assets": [
-        "assets"
+        "assets",
+        "ddf",
+        "extra-data",
+        "translation"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,8 +22,7 @@
       ],
       "scripts": [
         "../../node_modules/vizabi/build/dist/vizabi.js",
-        "../../node_modules/vizabi-ddfcsv-reader/dist/bundle.web.js",
-        "../../node_modules/d3/build/d3.js"
+        "../../node_modules/vizabi-ddfcsv-reader/dist/bundle.web.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
